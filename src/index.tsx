@@ -1,7 +1,7 @@
 import {render} from 'react-dom';
-import {App} from "./components/App/App";
 import './index.scss'
 import {BrowserRouter} from "react-router-dom";
+import {App} from "./app/App";
 
 render(
   <BrowserRouter>
