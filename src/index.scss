@@ -1,4 +1,5 @@
-@import url('./fonts/normalize.scss');
+@import url('shared/accets/fonts/fonts.scss');
+@import url('./shared/accets/fonts/normalize.scss');
 
 .app{
   position: relative;
@@ -7,3 +8,4 @@
   margin: 0 auto;
   height: 100vh;
 }
+

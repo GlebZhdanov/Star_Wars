@@ -1,4 +1,24 @@
 .Main {
   height: 100vh;
   background: linear-gradient(180deg, #1F2A63 0%, #17002F 100%);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 138px;
+}
+
+.title {
+  font-family: 'Karla Regular';
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 84px;
+  letter-spacing: 4px;
+  color: #FFFFFF;
+}
+
+.subtitle {
+  font-family: 'Source Sans Pro Regular';
+  font-size: 72px;
+  line-height: 84px;
+  letter-spacing: 4px;
+  color: #FFFFFF;
 }
