@@ -1,4 +1,4 @@
-import {RoutePath} from "../../../shared/config/routeConfig/routeConfig";
+import { RoutePath } from '../../../shared/config/routeConfig/routeConfig';
 
 export interface SidebarItemsType {
   path: string;

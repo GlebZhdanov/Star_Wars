@@ -1,14 +1,26 @@
 .Main {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100vw;
+  margin-left: -50vw;
   height: 100vh;
-  background: linear-gradient(180deg, #1F2A63 0%, #17002F 100%);
+  background: linear-gradient(180deg, #1F2A63 0%, #17002F 100%);  z-index: -1;
+}
+
+.content {
+  padding-top: 200px;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding-top: 138px;
 }
 
 .title {
-  font-family: 'Karla Regular';
-  font-weight: 400;
+  font-family: 'Karla Bold';
+  font-style: normal;
+  font-weight: 700;
   font-size: 72px;
   line-height: 84px;
   letter-spacing: 4px;
@@ -16,9 +28,24 @@
 }
 
 .subtitle {
-  font-family: 'Source Sans Pro Regular';
-  font-size: 72px;
-  line-height: 84px;
-  letter-spacing: 4px;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
   color: #FFFFFF;
+  margin: 64px 0;
+}
+
+.button {
+  font-family: 'Karla';
+  width: 231px;
+  height: 66px;
+  background: #FFC107;
+  box-shadow: inset 0px -9px 0px rgba(0, 0, 0, 0.18);
+  border-radius: 11px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 27px;
 }

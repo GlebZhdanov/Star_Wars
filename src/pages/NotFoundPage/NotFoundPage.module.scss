@@ -1,7 +1,45 @@
 .NotFoundPage {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100vw;
+  margin-left: -50vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  font: var(--font-l);
-  height: 100%;
+  background-color: #17002F;
+  flex-direction: column;
+}
+
+.title {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 700px;
+  line-height: 818px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 4px;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
+
+.button {
+  font-family: 'Karla';
+  width: 231px;
+  height: 66px;
+  background: #73D677;
+  box-shadow: inset 0px -9px 0px rgba(0, 0, 0, 0.18);
+  border-radius: 11px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 27px;
+  cursor: pointer;
+}
+
+.image {
+  position: absolute;
+  top: 12%;
 }

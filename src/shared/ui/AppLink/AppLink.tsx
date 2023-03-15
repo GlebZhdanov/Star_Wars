@@ -1,5 +1,5 @@
-import React, {ReactNode} from 'react';
-import {NavLink, LinkProps} from "react-router-dom";
+import React, { ReactNode } from 'react';
+import { NavLink, LinkProps } from 'react-router-dom';
 import classes from './AppLink.module.scss';
 
 interface AppLinkProps extends LinkProps {
@@ -11,12 +11,9 @@ export const AppLink = (props: AppLinkProps) => {
   return (
     <NavLink
       to={to}
-      className={({ isActive }) =>
-        isActive ? `${classes.link_active}` : `${classes.link_inactive}`
-      }
+      className={({ isActive }) => (isActive ? `${classes.link_active}` : `${classes.link_inactive}`)}
     >
       {children}
     </NavLink>
   );
 };
-
