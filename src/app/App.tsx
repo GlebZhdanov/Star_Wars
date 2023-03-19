@@ -1,4 +1,5 @@
 import { useLocation } from 'react-router-dom';
+import { Suspense } from 'react';
 import AppRouter from './router/AppRouter';
 import { Header } from '../widgets/Header/Header';
 
@@ -8,11 +9,13 @@ export const App = () => {
 
   return (
     <div className="app">
-      {
-        renderHeader
-      && <Header />
-      }
-      <AppRouter />
+      <Suspense fallback="">
+        {
+          renderHeader
+          && <Header />
+        }
+        <AppRouter />
+      </Suspense>
     </div>
   );
 };

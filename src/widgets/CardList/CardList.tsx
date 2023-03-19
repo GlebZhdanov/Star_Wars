@@ -1,23 +1,20 @@
 import React from 'react';
-import Card from '../../shared/ui/Card/Card';
+import { Card } from '../../shared/ui/Card/Card';
 import classes from './CardList.module.scss';
 
 interface CardListProps {
   openPopup: ()=> void;
+  data?: any[];
 }
 
-const CardList = ({ openPopup }: CardListProps) => (
+export const CardList = ({ openPopup, data }: CardListProps) => (
   <div className={classes.CardList}>
-    <Card openPopup={openPopup} />
-    <Card openPopup={openPopup} />
-    <Card openPopup={openPopup} />
-    <Card openPopup={openPopup} />
-    <Card openPopup={openPopup} />
-    <Card openPopup={openPopup} />
-    <Card openPopup={openPopup} />
-    <Card openPopup={openPopup} />
-    <Card openPopup={openPopup} />
+    {data.length !== 0 && data.map((element: any, index: number) => (
+      <Card
+        key={index}
+        data={element}
+        openPopup={openPopup}
+      />
+    ))}
   </div>
 );
-
-export default CardList;

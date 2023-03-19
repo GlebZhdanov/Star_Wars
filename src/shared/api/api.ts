@@ -1,6 +1,3 @@
-// eslint-disable-next-line import/no-named-default
-import { default as axios } from 'axios';
-
 export type TApiConfig = {
   url: string,
 }
@@ -12,18 +9,17 @@ export class Api {
     this._url = url;
   }
 
-  getPeopleData = async () => {
+  getLoadDataPeople = () => {
+    const page = [1, 2, 3, 4, 5, 6, 7, 8];
     try {
-      await Promise.all([1, 2, 3, 4, 5, 6, 7, 8].map(
-        (number) => axios.get(`${this._url}/?page=${number}`),
-      ))
-        .then((responses) => console.log(responses));
+      const requests = page.map((number) => fetch(`${this._url}/?page=${number}`));
+      return Promise.all(requests)
+        .then((responses) => Promise.all(responses.map((r) => r.json())));
     } catch (e) {
-      console.log(e.code);
+      console.log(e);
     }
   };
 }
-
 const api = new Api({
   url: 'https://swapi.dev/api/people',
 });

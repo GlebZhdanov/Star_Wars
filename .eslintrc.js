@@ -22,6 +22,7 @@ module.exports = {
     'react-hooks',
   ],
   rules: {
+    camelcase: ['error', { allow: [''] }],
     'react/jsx-indent': [2, 2],
     'react/jsx-indent-props': [2, 2],
     indent: [2, 2],
@@ -47,6 +48,14 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies,
     'no-param-reassign': 'off',
     'no-undef': 'off',
+    'react/jsx-no-useless-fragment': 'off',
+    'array-callback-return': 'off',
+    'consistent-return': 'off',
+    'default-param-last': 'off',
+    'react/no-array-index-key': 'off',
+    'no-plusplus': 'off',
+    'jsx-a11y/no-noninteractive-element-interactions': 'off',
+    'no-use-before-define': 'off',
   },
   globals: {
     __IS_DEV__: true,
