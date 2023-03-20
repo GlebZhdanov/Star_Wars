@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 import classes from './Card.module.scss';
-import { useDispatch, useSelector } from '../../../redux/hooks';
-import { peoplePopup } from '../../../redux/people/actions/actions';
+import { useDispatch } from '../../redux/hooks';
+import { peoplePopup } from '../../redux/people/actions/actions';
 
 interface CardProps {
   openPopup: () => void;
@@ -35,7 +35,7 @@ export const Card = ({ openPopup, data }: CardProps) => {
   }
 
   return (
-    <div className={classes.Card} onClick={openPopup}>
+    <div data-testid="card" className={classes.Card} onClick={openPopup}>
       <ul onClick={handleClick} className={classes.card_container}>
         <h3 className={classes.tittle}>{name}</h3>
         <ul className={classes.list}>

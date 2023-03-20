@@ -1,10 +1,10 @@
 import React from 'react';
-import { Card } from '../../shared/ui/Card/Card';
+import { Card } from '../Card/Card';
 import classes from './CardList.module.scss';
 
 interface CardListProps {
   openPopup: ()=> void;
-  data?: any[];
+  data?: any[] | undefined;
 }
 
 export const CardList = ({ openPopup, data }: CardListProps) => (

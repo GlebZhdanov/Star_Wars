@@ -16,6 +16,11 @@
   height: 24px;
   text-align: center;
   cursor: pointer;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .wrapper {
