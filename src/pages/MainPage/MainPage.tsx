@@ -17,6 +17,7 @@ export const MainPage = () => {
           <h1 className={classes.title}>Find all your favorite character</h1>
           <p className={classes.subtitle}> You can find out all the information about your favorite characters</p>
           <button
+            id="button"
             type="button"
             className={classes.button}
             onClick={redirectCardPage}

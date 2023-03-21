@@ -35,7 +35,7 @@ export const Card = ({ openPopup, data }: CardProps) => {
   }, [data, dispatch]);
 
   return (
-    <div data-testid="card" className={classes.Card} onClick={openPopup}>
+    <div id="people-card" data-testid="card" className={classes.Card} onClick={openPopup}>
       <ul onClick={handleClick} className={classes.card_container}>
         <h3 data-testid="card-title" className={classes.tittle}>{name}</h3>
         <ul className={classes.list}>

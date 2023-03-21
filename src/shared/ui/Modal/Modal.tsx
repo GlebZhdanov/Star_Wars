@@ -31,9 +31,9 @@ const Modal = (props: TModal) => {
 
   return ReactDOM.createPortal(
     <ModalOverlay popupClose={popupClose}>
-      <div className={classes.popup}>
+      <div id="popup" className={classes.popup}>
         <div className={classes.popup_container} onClick={(event) => event.stopPropagation()}>
-          <ClosePopupIcon className={classes.close} onClick={popupClose} />
+          <ClosePopupIcon id="close-button" className={classes.close} onClick={popupClose} />
           {children}
         </div>
       </div>
