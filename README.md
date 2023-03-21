@@ -10,6 +10,7 @@
 - Webpack
 - Redux
 - Jest
+- Сypress
 - Scss
 - i18n
 - Eslint
