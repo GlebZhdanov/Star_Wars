@@ -1,38 +1,29 @@
-// import { render, screen } from '@testing-library/react';
-// import { Provider } from 'react-redux';
-// import { Card } from './Card';
-// import { store } from '../../redux/store';
-//
-// describe('Card', () => {
-//   const data = {
-//     name: 'fdsfsd',
-//   };
-//   test('test render', () => {
-//     render(
-//       <Provider store={store}>
-//         <Card data={data} />
-//       </Provider>,
-//     );
-//     expect(screen.getByTestId('card')).toBeInTheDocument();
-//     screen.debug();
-//   });
-// });
-//
-// // import { fireEvent, screen } from '@testing-library/react';
-// // import { Sidebar } from 'widgets/Sidebar/ui/Sidebar/Sidebar';
-// // import { componentRender } from 'shared/lib/tests/componentRender/componentRender';
-// //
-// // describe('Sidebar', () => {
-// //   test('with only first param', () => {
-// //     componentRender(<Sidebar />);
-// //     expect(screen.getByTestId('sidebar')).toBeInTheDocument();
-// //   });
-// //
-// //   test('test toggle', () => {
-// //     componentRender(<Sidebar />);
-// //     const toggleBtn = screen.getByTestId('sidebar-toggle');
-// //     expect(screen.getByTestId('sidebar')).toBeInTheDocument();
-// //     fireEvent.click(toggleBtn);
-// //     expect(screen.getByTestId('sidebar')).toHaveClass('collapsed');
-// //   });
-// // });
+// @ts-nocheck
+import { render, screen } from '@testing-library/react';
+import { Provider } from 'react-redux';
+import { store } from 'app/StoreProvider/config/store';
+import { Card } from './Card';
+
+describe('Card', () => {
+  const data = {
+    name: 'Luke Skywalker',
+    height: '172',
+    mass: '77',
+    birth_year: '19BBY',
+    gender: 'male',
+  };
+
+  test('test render', () => {
+    render(
+      <Provider store={store}>
+        <Card data={data} />
+      </Provider>,
+    );
+    expect(screen.getByTestId('card')).toBeInTheDocument();
+    expect(screen.getByTestId('card-title')).toHaveTextContent('Luke Skywalker');
+    expect(screen.getByTestId('card-height')).toHaveTextContent('172');
+    expect(screen.getByTestId('card-mass')).toHaveTextContent('77');
+    expect(screen.getByTestId('card-birth_year')).toHaveTextContent('19BBY');
+    expect(screen.getByTestId('card-gender')).toHaveTextContent('male');
+  });
+});

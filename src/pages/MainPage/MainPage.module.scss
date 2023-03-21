@@ -17,6 +17,11 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+.container {
+  padding-top: 20px;
+  padding-left: 157px;
+}
+
 .title {
   font-family: 'Karla Bold';
   font-style: normal;
@@ -25,20 +30,21 @@
   line-height: 84px;
   letter-spacing: 4px;
   color: #FFFFFF;
+  margin: 0;
 }
 
 .subtitle {
-  font-family: 'Karla';
+  font-family: 'Karla Regular';
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 37px;
   color: #FFFFFF;
-  margin: 64px 0;
+  margin: 64px 0 65px;
 }
 
 .button {
-  font-family: 'Karla';
+  font-family: 'Karla Bold';
   width: 231px;
   height: 66px;
   background: #FFC107;
@@ -49,4 +55,37 @@
   font-size: 23px;
   line-height: 27px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    padding-left: 50px;
+  }
+  .subtitle {
+    font-size: 28px;
+  }
+  .title {
+    font-size: 62px;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 372px) {
+  .subtitle {
+    font-size: 22px;
+  }
+  .title {
+    font-size:50px;
+  }
+  .container {
+    padding-left: 20px;
+  }
+  .button {
+    font-size: 20px;
+  }
 }

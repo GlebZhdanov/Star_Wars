@@ -1,4 +1,6 @@
 %link {
+  font-family: 'Karla Regular';
+  font-weight: 400;
   margin-right: 74px;
   font-size: 25px;
   line-height: 29px;
@@ -14,4 +16,3 @@
 .link_inactive {
   @extend %link;
 }
-

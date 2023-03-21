@@ -10,3 +10,16 @@
   min-height: 530px;
   align-items: start;
 }
+
+@media screen and (max-width: 1090px) {
+  .CardList {
+    grid-template-columns: repeat(2, 352px);
+  }
+}
+
+@media screen and (max-width: 752px) {
+  .CardList {
+    grid-template-columns: repeat(1, 352px);
+  }
+}
+

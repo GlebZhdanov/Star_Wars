@@ -1,16 +1,15 @@
 import SwitchingLanguages from 'shared/accets/image/switching_languages.svg';
 import { useCallback, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { SelectCard } from 'widgets/Select/Select';
+import { useDispatch, useSelector } from 'app/StoreProvider/config/hooks';
+import { CardList } from 'widgets/CardList/CardList';
+import Modal from 'shared/ui/Modal/Modal';
+import { CardPopup } from 'widgets/CardPopup/CardPopup';
+import { loadPeople, sortPeople } from 'redux/people/actions/actions';
+import { Loader } from 'shared/ui/Loader/Loader';
+import { Pagination } from 'widgets/Pagination/Pagination';
 import classes from './CardsPage.module.scss';
-import { CardList } from '../../widgets/CardList/CardList';
-import Modal from '../../shared/ui/Modal/Modal';
-import { CardPopup } from '../../widgets/CardPopup/CardPopup';
-import { loadPeople, sortPeople } from '../../redux/people/actions/actions';
-import { useDispatch, useSelector } from '../../redux/hooks';
-import { Loader } from '../../shared/ui/Loader/Loader';
-import { Pagination } from '../../widgets/Pagination/Pagination';
-import { SelectCard } from '../../widgets/SelectCard/SelectCard';
-import i18n from '../../shared/config/i18n/i18n';
 
 export const CardsPage = () => {
   const { dataFiltered } = useSelector((state) => state.people);

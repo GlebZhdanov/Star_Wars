@@ -2,9 +2,8 @@ import { render } from 'react-dom';
 import './index.scss';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import { App } from './app/App';
-import { store } from './redux/store';
-
+import { store } from 'app/StoreProvider/config/store';
+import { App } from 'app/App';
 import './shared/config/i18n/i18n';
 
 render(

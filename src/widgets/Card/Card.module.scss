@@ -7,7 +7,9 @@
 }
 
 .card_container {
+  margin: 0;
   padding-left: 26px;
+  padding-top: 5px;
 }
 
 .tittle {
@@ -18,7 +20,7 @@
   line-height: 21px;
   color: #212121;
   text-shadow: 4px 4px 4px rgba(33, 33, 33, 0.1);
-  margin: 6px 0 16px;
+  margin: 0;
 }
 
 .number_content {
@@ -28,15 +30,15 @@
 
 .number {
   border-radius: 50%;
-  width: 38px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
   display: flex;
   background: #ffffff;
   border: 3px solid #212121;
   align-items: center;
   justify-content: center;
   color: #212121;
-  font-family: 'Karla';
+  font-family: 'Karla Regular';
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -48,6 +50,7 @@
   flex-direction: row;
   list-style-type: none;
   padding: 0;
+  padding-top: 17px;
 }
 
 .list_container {
@@ -61,6 +64,14 @@
 .number_title{
   list-style-type: none;
   padding: 0;
+  font-family: 'Karla Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #4B4B4B;
+  margin-top: 5px;
 }
 
 .enum {
@@ -68,6 +79,14 @@
   flex-direction: row;
   padding: 0;
   list-style-type: none;
+  font-family: 'Roboto Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #212121;
+  margin-top: 9px;
 }
 
 .enum_container {
@@ -93,6 +112,8 @@
   border-radius: 11px;
   list-style-type: none;
   margin-right: 15px;
+  box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.18);
+  border-radius: 11px;
 }
 
 .enum_type {
@@ -101,4 +122,13 @@
   padding: 0 15px;
   border-radius: 11px;
   list-style-type: none;
+  box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.18);
+  border-radius: 11px;
 }
+
+//@media screen and (max-width: 1140px) {
+//  .Card {
+//    width: 200px;
+//  }
+//}
+

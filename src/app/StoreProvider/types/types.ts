@@ -1,6 +1,7 @@
 import { ThunkAction, ThunkDispatch } from 'redux-thunk';
-import { rootReducer } from './reducers';
-import { TPeopleAction } from './people/actions/actions';
+// import { roor } from './reducers';
+import { rootReducer } from 'app/StoreProvider/config/reducers';
+import { TPeopleAction } from 'redux/people/actions/actions';
 
 type TApplicationActions = TPeopleAction;
 export type RootState = ReturnType<typeof rootReducer>;

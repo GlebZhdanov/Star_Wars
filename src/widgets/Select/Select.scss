@@ -1,0 +1,94 @@
+.select-custom {
+  &__control {
+    width: 135px !important;
+    height: 24px !important;
+    background: #F2F2F2 !important;
+    box-shadow: 2px 2px 2px rgba(33, 33, 33, 0.1) !important;
+    border-radius: 4px !important;
+    border: none !important;
+    cursor: pointer !important;
+  }
+
+  &__value-container {
+    padding: 0 !important;
+    cursor: pointer !important;
+  }
+
+  &__input {
+    font-family: 'Source Sans Pro' !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    color: #000000 !important;
+  }
+
+  &__placeholder {
+    font-family: 'Source Sans Pro' !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    color: #000000 !important;
+  }
+
+  &__input-container {
+    margin: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  &__control {
+    min-height: 24px !important;
+    font-family: 'Source Sans Pro' !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    color: #000000 !important;
+  }
+
+  &__indicator {
+    padding: 0 !important;
+  }
+
+  &__single-value {
+    margin-left: 35px;
+  }
+
+  &__indicator-separator {
+    display: none !important;
+  }
+
+  &hover,
+  &__indicator {
+    color: black;
+  }
+
+  &__menu {
+    width: 135px !important;
+    background: #F2F2F2  !important;
+    box-shadow: 4px 4px 8px rgba(1, 28, 64, 0.2)  !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
+  }
+
+  &__custom-menu {
+    cursor: pointer !important;
+  }
+
+  &__option {
+    cursor: pointer !important;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.span {
+  margin-right: 18px;
+}

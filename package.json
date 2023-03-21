@@ -47,6 +47,7 @@
     "json-loader": "^0.5.7",
     "mini-css-extract-plugin": "^2.7.3",
     "react-redux": "^8.0.0",
+    "react-select": "^5.7.1",
     "redux": "^4.2.0",
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.4.1",

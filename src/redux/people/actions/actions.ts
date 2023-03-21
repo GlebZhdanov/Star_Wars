@@ -1,3 +1,5 @@
+import { AppDispatch, AppThunk } from 'app/StoreProvider/types/types';
+import { api } from 'shared/api/api';
 import {
   PEOPLE_DATA_SUCCESS,
   PEOPLE_DATA_REQUEST,
@@ -5,8 +7,6 @@ import {
   PEOPLE_DATA_FILTERED,
   PEOPLE_DATA_POPUP,
 } from '../types/types';
-import { AppDispatch, AppThunk } from '../../type';
-import { api } from '../../../shared/api/api';
 
 export interface ILoadPeopleRequestAction {
   readonly type: typeof PEOPLE_DATA_REQUEST;
@@ -67,7 +67,7 @@ export const loadPeople = (): AppThunk => (dispatch: AppDispatch) => {
   return api.getLoadDataPeople()
     .then((res) => {
       dispatch(loadPeopleSuccessAction(res));
-      dispatch(sortPeople('all'));
+      dispatch(sortPeople('All'));
     })
     .catch((err) => {
       dispatch(loadPeopleFailedAction());

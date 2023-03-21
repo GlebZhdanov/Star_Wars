@@ -13,7 +13,7 @@ export const MainPage = () => {
   return (
     <div className={classes.Main}>
       <div className={classes.content}>
-        <div>
+        <div className={classes.container}>
           <h1 className={classes.title}>Find all your favorite character</h1>
           <p className={classes.subtitle}> You can find out all the information about your favorite characters</p>
           <button
@@ -24,7 +24,7 @@ export const MainPage = () => {
             See more...
           </button>
         </div>
-        <BannerImage />
+        <BannerImage className={classes.image} />
       </div>
     </div>
   );

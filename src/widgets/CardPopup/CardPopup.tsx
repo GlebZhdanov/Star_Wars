@@ -2,12 +2,12 @@ import Aliens from 'shared/accets/image/inoplanets.svg';
 import React from 'react';
 import Male from 'shared/accets/image/male.svg';
 import Emale from 'shared/accets/image/emale.svg';
+import { useSelector } from 'app/StoreProvider/config/hooks';
+import { handlerGender } from 'widgets/Card/Card';
 import classes from './CardPopup.module.scss';
-import { useSelector } from '../../redux/hooks';
 
 export const CardPopup = () => {
   const { dataPeoplePopup } = useSelector((state) => state.people);
-  console.log(dataPeoplePopup);
   const {
     name,
     skin_color,
@@ -18,16 +18,7 @@ export const CardPopup = () => {
     gender,
   } = dataPeoplePopup;
 
-  function handlerGender(gender: string) {
-    if (gender === 'male') {
-      return <li style={{ backgroundColor: '#73D677' }} className={classes.enum_floor}>{gender}</li>;
-    } if (gender === 'hermaphrodite') {
-      return <li style={{ backgroundColor: '#F5DB13' }} className={classes.enum_floor}>{gender}</li>;
-    } if (gender === 'female') {
-      return <li style={{ backgroundColor: '#C956FF' }} className={classes.enum_floor}>{gender}</li>;
-    }
-    return null;
-  }
+  const handlerGenderPopupPeople = handlerGender(gender);
 
   function handlerGenderImage(gender: string) {
     if (gender === 'male') {
@@ -42,12 +33,12 @@ export const CardPopup = () => {
 
   return (
     <>
-      <div className={classes.card_content_image}>
+      <div data-testid="card-popup" className={classes.card_content_image}>
         {handlerGenderImage(gender)}
         <ul className={classes.enum}>
-          {handlerGender(gender)}
+          {handlerGenderPopupPeople}
           {birth_year === 'unknown' ? null
-            : <li className={classes.enum_type}>{birth_year}</li>}
+            : <li data-testid="card-popup-birth_year" className={classes.enum_type}>{birth_year}</li>}
         </ul>
       </div>
       <div className={classes.card_content}>

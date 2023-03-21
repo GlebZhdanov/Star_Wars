@@ -42,7 +42,7 @@ export const reducer = (state = initialState, action: TPeopleAction) => {
   case PEOPLE_DATA_FILTERED:
     return {
       ...state,
-      dataFiltered: action.payload === 'all'
+      dataFiltered: action.payload === 'All'
         ? state.data
         : state.data.filter((item) => item.eye_color === action.payload),
     };

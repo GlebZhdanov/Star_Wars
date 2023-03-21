@@ -1,5 +1,5 @@
 export enum EyeColor {
-  all = 'all',
+  all = 'All',
   brown = 'brown',
   red = 'red',
   blue = 'blue',

@@ -13,12 +13,11 @@
 }
 
 .title {
-  font-family: 'Karla';
+  font-family: 'Karla Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 700px;
   line-height: 818px;
-  display: flex;
   align-items: center;
   letter-spacing: 4px;
   color: rgba(255, 255, 255, 0.5);
@@ -26,7 +25,7 @@
 }
 
 .button {
-  font-family: 'Karla';
+  font-family: 'Karla Regular';
   width: 231px;
   height: 66px;
   background: #73D677;
@@ -43,3 +42,30 @@
   position: absolute;
   top: 12%;
 }
+
+@media screen and (max-width: 1204px) {
+  .title {
+    font-size:600px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .image {
+    display: none;
+  }
+  .title {
+    font-size:300px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .title {
+    font-size:100px;
+  }
+  .button {
+    width: 150px;
+    height: 34px;
+    font-size: 17px;
+  }
+}
+

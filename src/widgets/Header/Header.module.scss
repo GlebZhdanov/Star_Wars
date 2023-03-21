@@ -13,8 +13,29 @@
 .content_link {
   display: flex;
   flex-direction: row;
+  padding-right: 80px;
+  margin-bottom: 10px;
 }
 
 .image {
+  padding: 5px 0 0 157px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 780px) {
+  .content_link {
+    padding-right: 20px;
+  }
+  .image {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .image {
+    display: none;
+  }
+  .content_link {
+    padding-left: 30px;
+  }
 }
