@@ -32,7 +32,4 @@
 
 ##### `npm run test` – выполнить тесты
 
-### Ссылка на проект: [Star Wars](glebzhdanov.github.io/Star_Wars/)
-
-
-
+### Ссылка на проект: [Star Wars](https://glebzhdanov.github.io/Star_Wars/)
