@@ -5,12 +5,12 @@
 
 ##  Стек
 - HTML, CSS
-- TypeScript
-- React
+- typeScript
+- react
 - webpack
-- Redux
-- Jest
-- SCSS
+- redux
+- jest
+- scss
 - i18n
 - eslint
 
@@ -32,7 +32,7 @@
 
 ##### `npm run test` – выполнить тесты
 
-### Ссылка на проект: [React-burger](https://glebzhdanov.github.io/react-burger/)
+### Ссылка на проект: [Star Wars](glebzhdanov.github.io/Star_Wars/)
 
 
 
