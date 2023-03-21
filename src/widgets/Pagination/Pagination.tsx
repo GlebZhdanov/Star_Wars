@@ -26,7 +26,6 @@ export const Pagination = (props: any) => {
               {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
               <a
                 className={currentPage === number ? classes.active : ''}
-                href="#"
               >
                 {number}
               </a>

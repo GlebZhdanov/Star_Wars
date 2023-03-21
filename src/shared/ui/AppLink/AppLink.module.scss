@@ -6,6 +6,9 @@
   line-height: 29px;
   color: #F6F7F9;
   text-decoration: none;
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .link_active {

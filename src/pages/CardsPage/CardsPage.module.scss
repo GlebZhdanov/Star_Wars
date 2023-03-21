@@ -48,6 +48,9 @@
   bottom: -5%;
   right: -8%;
   cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 @media screen and (max-width: 1310px) {
