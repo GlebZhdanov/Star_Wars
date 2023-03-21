@@ -30,6 +30,6 @@
 
 ##### `npm run build:prod` – production сборка проекта
 
-##### `npm run test` – выполнить тесты
+##### `npm run unit ` – выполнить unit тесты
 
 ### Ссылка на проект: [Star Wars](https://glebzhdanov.github.io/Star_Wars/)
