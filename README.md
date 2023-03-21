@@ -5,14 +5,14 @@
 
 ##  Стек
 - HTML, CSS
-- typeScript
-- react
-- webpack
-- redux
-- jest
-- scss
+- TypeScript
+- React
+- Webpack
+- Redux
+- Jest
+- Scss
 - i18n
-- eslint
+- Eslint
 
 ## Функционал
 - Приложение содержить 3 страницы.
@@ -23,7 +23,7 @@
 - Настроенно тестирование с помощью фрейворка Jest.
 
 ##  Установка зависимостей
-
+    
 ##### `npm i` – установить зависимости проекта
 
 ##### `npm run start` – запуск devServer на http://localhost:3000/
